@@ -15,7 +15,7 @@ config_vars:
   LANG: en_US.UTF-8
   PYTHONHASHSEED: random
   PYTHONHOME: /app/.heroku/venv/
-  PYTHONPATH: /app/
+  PYTHONPATH: /app/:/app/lib/python2.7/site-packages/
 EOF
 
 
