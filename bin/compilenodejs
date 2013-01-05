@@ -194,7 +194,7 @@ fi
 
 # install dependencies with npm
 echo "-----> Installing dependencies with npm"
-for dependency in $(cat $1/npm_requirements.txt)
+for dependency in $(cat $BUILD_DIR/npm_requirements.txt)
 do
     run_npm_install_global $dependency
 done
