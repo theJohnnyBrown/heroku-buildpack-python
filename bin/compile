@@ -214,7 +214,11 @@ if [ -f $1/npm_requirements.txt ]; then
   puts-step "Ran compilenodejs"
 fi
 
-puts-step "build dir: $1, bin dir: $BIN_DIR"
+puts-step "build dir: $1"
+puts-step `ls $1`
+
+puts-step "bin dir: $BIN_DIR"
+puts-step `ls $BIN_DIR`
 
 
 # ### Fin.
