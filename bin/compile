@@ -211,6 +211,7 @@ source $BIN_DIR/steps/hooks/post_compile
 
 if [ -f $1/npm_requirements.txt ]; then
   source $BIN_DIR/compilenodejs $1 $2
+  puts-step "Ran compilenodejs"
 fi
 
 
